@@ -46,12 +46,14 @@ def draw_circle(canvas, circle):
  drawn_canvas = world.ca(canvas.width, canvas.height)
  drawn_canvas.circle([circle.center.x, circle.center.y], circle.radius)
  
-def draw_czech_republic_flag(canvas):
- drawn_canvas = world.ca(canvas.width, canvas.height)
- drawn_canvas.rectangle([[-100, 60], [100, 60]], outline=None, fill='white')
- drawn_canvas.rectangle([[-100, -60], [100, 0]], outline=None, fill='red2')
- points = [[-100,-60], [-100, 60], [0, 0]]
- drawn_canvas.polygon(points, fill='blue3')
+# def draw_czech_republic_flag(canvas):
+ # drawn_canvas = world.ca(canvas.width, canvas.height)
+ # drawn_canvas.rectangle([[-100, 60], [100, 60]], outline=None, fill='white')
+ # drawn_canvas.rectangle([[-100, -60], [100, 0]], outline=None, fill='red2')
+ # points = [[-100,-60], [-100, 60], [0, 0]]
+ # drawn_canvas.polygon(points, fill='blue3')
+
+
 #Calling methods of point, circle, rectangle, flag
 world = World()
 #draw_point(a_canvas, p)
